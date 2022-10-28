@@ -10,7 +10,10 @@
     font-weight: normal;
     font-style: normal;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Inter', sans-serif;
 }
@@ -18,11 +21,11 @@ body{
 header{
     background-color: #1D1D1D;
     color: #908364;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 115px;
+}
+h1{
+    padding-top: 20px;
+    height: 95px;
 }
 h1>strong{
     color: white;
@@ -33,9 +36,6 @@ h1>strong{
     color: #908364;
 }
 nav{
-    position: fixed;
-    top: 115px;
-    left: 0;
     width: 100%;
     height: 55px;
     background-color: #908364;
@@ -55,13 +55,13 @@ nav>ul>li{
     font-weight: 800;
 }
 #logoPunkRock{
-    position: fixed;
-    top: 0;
-    right: 0;
+    position: absolute;
+    top: 15px;
+    right: 15px;
 }
 #fondo{
     position: fixed;
-    top: 170px;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -69,40 +69,51 @@ nav>ul>li{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -100;
 }
 main{
-    position: fixed;
-    top: 170px;
-    left: 0;
     width: 100%;
-    height: 100%;
     text-align: center;
-    overflow: scroll;
     background-color: rgba(255, 255, 255, 25%);
 }
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 h2{
+    padding-top: 30px;
     background-color: rgba(0, 0, 0, 50%);
-}
-#cartel{
-    position: absolute;
-    top: 50px;
-    left: 0;
     width: 100%;
 }
-#cartel>img{
-    position: relative;
-    width: 400px;
+section>img{
+    max-width: 80%;
+    margin: auto;
+    padding: 20px 0;
 }
-#video1{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+
+iframe{
+    max-width: 80%;
+    padding: 20px 0;
 }
-#video1>iframe{
-    position: absolute;
-    top: 30px;
-    left: calc(50% - 600px);
+
+@media (max-width: 700px) {
+    header{
+        height: 200px;
+    }
+    nav{
+        display: none;
+    }
+    h1{
+        padding-left: 20px;
+    }
+    h1>strong{
+        display: block;
+    }
+    #logoPunkRock{
+        top: 50px;
+        right: 50px;
+    }
 }
