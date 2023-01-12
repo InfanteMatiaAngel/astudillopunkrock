@@ -5,25 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Astudillo Punk Rock</title>
 </head>
 <body>
     <header>
-        <h1><sup><small>XI</small></sup> 
-            <strong>ASTUDILLO</strong> 
-            <span class="material-symbols-outlined">
-            star
-            </span>
-            PUNKROCK
-            <span class="material-symbols-outlined">
-            star
-            </span>
-        </h1>
-        <img src="sello_blanco.png" alt="Astudillo Punk Rock" id="logoPunkRock">
+        <img src="./img/logo.png" alt="Astudillo Punk Rock" id="letrasPunkRock">
+        <img src="./img/ojo punky.png" alt="Astudillo Punk Rock" id="logoPunkRock">
         <nav>
             <ul>
-                <li>EDICIONES ANTERIORES</li>
+                <li id="editionsItem">
+                    EDICIONES
+                    <span class="material-symbols-outlined expand">
+                        expand_more
+                    </span>
+                    <span class="material-symbols-outlined expand hidden">
+                        expand_less
+                    </span>
+                    <ul id="editionsList">
+                        <li><a href="#"> XII Edición</a></li>
+                        <li><a href="./editions/xiEdition.html"> XI Edición</a></li>
+                        <li><a href="#"> X Edición</a></li>
+                        </ul>
+                </li>
                 <li>GALERIA</li>
                 <li>MERCHAN</li>
                 <li>ENTRADAS</li>
@@ -32,15 +37,24 @@
     </header>
     <div id="fondo"></div>
     <main>
-        <section id="cartel">
-            <h2>CARTEL</h2>
-            <img src="poster_definitivo.jpg" alt="Cartel">
-        </section>
         <section id="video1">
-            <h2>VIDEO 1</h2>
+            <h2>EDICIÓN ANTERIOR</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/quh9uuJdJRc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section id="news">
+            <h2>NOVEDADES</h2>
+            <h3>Primeras confirmaciones</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga ab at a fugiat qui, ex eum accusamus nam sit corporis earum enim rerum voluptatum maxime tempora distinctio perferendis officia! Nesciunt?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga ab at a fugiat qui, ex eum accusamus nam sit corporis earum enim rerum voluptatum maxime tempora distinctio perferendis officia! Nesciunt?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga ab at a fugiat qui, ex eum accusamus nam sit corporis earum enim rerum voluptatum maxime tempora distinctio perferendis officia! Nesciunt?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga ab at a fugiat qui, ex eum accusamus nam sit corporis earum enim rerum voluptatum maxime tempora distinctio perferendis officia! Nesciunt?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga ab at a fugiat qui, ex eum accusamus nam sit corporis earum enim rerum voluptatum maxime tempora distinctio perferendis officia! Nesciunt?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga ab at a fugiat qui, ex eum accusamus nam sit corporis earum enim rerum voluptatum maxime tempora distinctio perferendis officia! Nesciunt?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga ab at a fugiat qui, ex eum accusamus nam sit corporis earum enim rerum voluptatum maxime tempora distinctio perferendis officia! Nesciunt?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga ab at a fugiat qui, ex eum accusamus nam sit corporis earum enim rerum voluptatum maxime tempora distinctio perferendis officia! Nesciunt?</p>
         </section>
     </main>
     
+    <script src="./js/action.js"></script>
 </body>
 </html>
