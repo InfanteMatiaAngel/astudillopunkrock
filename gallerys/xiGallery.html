@@ -32,9 +32,9 @@
                         expand_less
                     </span>
                     <ul id="editionsList">
-                        <li><a href="../index.html">XII Edición</a></li>
+                        <li><a href="../index.html">XIII Edición</a></li>
+                        <li><a href="../editions/xiEdition.html">XII Edición</a></li>
                         <li><a href="#">XI Edición</a></li>
-                        <li><a href="#">X Edición</a></li>
                         </ul>
                 </li>
                 <li><a href="../gallerys/xiGallery.html">GALERIA</a></li>
@@ -53,16 +53,15 @@
     </header>
     <div id="fondo"></div>
     <main>
-        <section id="cartel">
-            <h2>CARTEL</h2>
-            <img src="../img/poster_definitivo.jpg" alt="Cartel">
-        </section>
-        <section id="video1">
-            <h2>VIDEO 1</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/quh9uuJdJRc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
+        <div class="carousel">
+            <span id="retroceder" class="material-symbols-outlined">
+                chevron_left
+            </span>
+            <div id="imagen"></div>
+            <span id="avanzar" class="material-symbols-outlined">
+                chevron_right
+            </span>
+        </div>
     </main>
-    
     <script src="../js/action.js"></script>
 </body>
-</html>
